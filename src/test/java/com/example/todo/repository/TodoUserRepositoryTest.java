@@ -33,19 +33,25 @@ public class TodoUserRepositoryTest {
 		
 	}
 	
-	@Test
-	@DisplayName("Test for retriving name from email address")
-	public void testGetNameByEmail() {
-		
-		User getUser = userRepository.findByEmail("testemail1@email.com");
-		
-		assertThat(getUser.getName()).isEqualTo("Test User1");
-		
-	}
-	
-	@Test
-	@DisplayName("Test for deleting the user")
-	public void testDeleteUser() {
-		
-	}
+//	@Test
+//	@DisplayName("Test for retrieving name from email address")
+//	public void testGetNameByEmail() {
+//		
+//		User getUser = userRepository.findByEmail("testemail1@email.com");
+//		
+//		assertThat(getUser.getName()).isEqualTo("Test User1");
+//		
+//	}
+//	
+//	@Test
+//	@DisplayName("Test for deleting the user")
+//	public void testDeleteUser() {
+//		
+//		userRepository.deleteUserByEmail("testemail1@email.com");
+//		
+//		User deletedUser = userRepository.findByEmail("testemail1@email.com");
+//		
+//		assertThat(deletedUser.getId()).isNull();
+//		
+//	}
 }

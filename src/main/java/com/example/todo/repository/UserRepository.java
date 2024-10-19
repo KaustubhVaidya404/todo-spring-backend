@@ -11,4 +11,7 @@ import com.example.todo.models.User;
 public interface UserRepository extends CrudRepository<User, Integer> {
 
 	User findByEmail(String email);
+	
+	void deleteUserByEmail(String email);
+	
 }
